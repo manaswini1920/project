@@ -14,13 +14,13 @@ const User = require("./models/user");
 const app = express();
 
 //configure app
-let port = 3000;
+let port = 5000;
 let host = "localhost";
 app.set("view engine", "ejs");
 
 //connect to database
 mongoose.connect('mongodb://localhost:27017/project', 
-                {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+                {useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=>{
     //start the server
     app.listen(port, host, function(){
