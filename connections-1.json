@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "619829f8c7ae5f8270f83f27"
+  },
+  "topic": "E-Sports",
+  "name": "Amateur-Only Street Fighter V Tournament",
+  "details": "Are you new to Street Fighter V? Wanna test your skills and combos against other players of a similar skill level? Wanna win $25,000? Enter into this amateur Street Fighter tournament and RISE UP!",
+  "date": "2021-11-27",
+  "start_Time": "11:00",
+  "end_Time": "17:00",
+  "imageURL": "/images/Street-Fighter-V-Logo.png",
+  "host_Name": {
+    "$oid": "619826d9c7ae5f8270f83f15"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61982b43c7ae5f8270f83f38"
+  },
+  "topic": "E-Sports",
+  "name": "$1,000,000 Guilty Gear Strive Tournament",
+  "details": "Do YOU know the smell of the game? Enter this tournament for Guilty Gear Strive to test your metal and ROCK OUT!",
+  "date": "2021-11-19",
+  "start_Time": "11:30",
+  "end_Time": "21:50",
+  "imageURL": "/images/GGS_logo.png",
+  "host_Name": {
+    "$oid": "619826d9c7ae5f8270f83f15"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61982bf9c7ae5f8270f83f48"
+  },
+  "topic": "E-Sports",
+  "name": "$100 Super Smash Bros. Melee Tournament",
+  "details": "Y'all already know what it is! The original Nintendo All-Stars Battle Royale is here! Test your skills against some of the best Melee players in the world for a piece of this $100 prize pool!",
+  "date": "2021-11-19",
+  "start_Time": "01:57",
+  "end_Time": "20:00",
+  "imageURL": "/images/Super_Smash_Bros_Melee_logo.png",
+  "host_Name": {
+    "$oid": "619826d9c7ae5f8270f83f15"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61982cc9c7ae5f8270f83f69"
+  },
+  "topic": "Discussions",
+  "name": "The Themes of Robotics and Futurism in MegaMan",
+  "details": "There's more than what meets the eye in this popular action platforming series. Explore the themes and ethics of robotics and futurism in this 5-hour long presentation.",
+  "date": "2021-11-19",
+  "start_Time": "18:00",
+  "end_Time": "09:04",
+  "imageURL": "/images/Mega_man_logo.png",
+  "host_Name": {
+    "$oid": "619801f44db3273c6cb01849"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61982e75c7ae5f8270f83f74"
+  },
+  "topic": "Discussions",
+  "name": "The State of Video Game Preservation Today",
+  "details": "Some of your favorite games may be disappearing sooner than you think. Join the 2 hour-long discussion on the state of video game preservation today and what can be done to save them.",
+  "date": "2021-11-19",
+  "start_Time": "11:00",
+  "end_Time": "13:00",
+  "imageURL": "/images/videoGamePreservation.jpg",
+  "host_Name": {
+    "$oid": "619801f44db3273c6cb01849"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61982effc7ae5f8270f83f7f"
+  },
+  "topic": "Discussions",
+  "name": "How to Get Better at Fighting Games",
+  "details": "Want to learn the basics that will get you good at any fighting game? Join this informative discussion to learn everything from spacing to execution!",
+  "date": "2021-11-24",
+  "start_Time": "10:00",
+  "end_Time": "15:00",
+  "imageURL": "/images/killer_instinct.jpg",
+  "host_Name": {
+    "$oid": "619801f44db3273c6cb01849"
+  },
+  "__v": 0
+}]
