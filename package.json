@@ -4,6 +4,7 @@
   "description": "Heroku app",
   "main": "app.js",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^4.6.0",
     "ejs": "^3.1.6",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
