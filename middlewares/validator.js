@@ -1,0 +1,12 @@
+exports.validateId = (request, response, next) => {
+    let id = request.params.id;
+    
+    //an objectId is a 24-bit Hex string
+    if(id.match(/^[0-9a-fA-F]{24}$/)) {
+        return next();
+    }else{
+        let err = new Error("Invalid story id: " + id);
+        err.status = 400;
+        return next(err);
+    }
+};

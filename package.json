@@ -25,5 +25,13 @@
   "engines": {
     "node": "14.x"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manaswini1920/project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manaswini1920/project/issues"
+  },
+  "homepage": "https://github.com/manaswini1920/project#readme"
 }

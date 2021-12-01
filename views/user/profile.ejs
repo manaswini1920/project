@@ -1,0 +1,19 @@
+<%- include('../partials/header.ejs')%>
+
+    <div class = "container">
+        <div class="row">
+            <div class = "col-md-12">
+                <h2>Welcome, <%=user.firstName%> <%=user.lastName%></h2>
+                <% if(connections.length){ %>
+                <p>You have created the following connections</p>
+                <% connections.forEach(connection => { %>
+                    <a href="/connections/<%= connection.id %>"><p><%= connection.name %></p></a>
+                <% });
+                } else{ %>
+                <p>You have not created any connections</p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</main>
+<%- include('../partials/footer.ejs')%>

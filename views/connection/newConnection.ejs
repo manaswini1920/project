@@ -1,0 +1,51 @@
+<%- include("../partials/header.ejs") %>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bodyText">
+                <form action="/connections" method="post">
+                    <label for="topic">Topic:</label>
+                    <input id="topic" name="topic" type="text" placeholder="topic" required>
+
+                    <br>
+
+                    <label for="title">Title:</label>
+                    <input id="title" name="name" type="text" placeholder="title" required>
+
+                    <br>
+
+                    <label for="details">Details:</label>
+                    <textarea id="details" name="details" cols="50" rows="6" placeholder="description" required></textarea>
+
+                    <br>
+
+
+                    <label for="when">When:</label>
+                    <input id="when" name="date" type="date" required>
+
+                    <br>
+
+                    <label for="start">Start:</label>
+                    <input id="start" name="start_Time" type="time" required>
+
+                    <br>
+
+                    <label for="end">End:</label>
+                    <input id="end" name="end_Time" type="time" required>
+
+                    <br><br>
+
+                    <label for="ImageURL">ImageURL:</label>
+                    <input id="ImageURL" name="imageURL" type="file" required>
+
+                    <br><br>
+                    <button id="createNewConnectionBtn">Create New Connection</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</main>
+    
+<%- include("../partials/footer.ejs") %>

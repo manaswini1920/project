@@ -1,0 +1,68 @@
+@font-face { font-family: Pixel; src: url('VPPixel-Simplified.otf'); }
+
+body{
+    font-family: Pixel;
+    font-size: 20px;
+}
+
+header, header a,  header a:hover, footer, footer a , footer a:hover{
+    background-color: #0e7a0d;
+    color: white;
+}
+
+.logo, .connections, .bodyText, .bodyButton{
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.connections{
+    text-align: center;
+}
+
+footer{
+    padding-top: 25px;
+}
+
+strong{
+    font-size: 30px;
+}
+
+.connectionHostName{
+    font-size: 25px;
+}
+
+#createNewConnectionBtn {
+    background-color: #0e7a0d;
+    color: white;
+}
+
+footer{
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.success {
+    background: rgba(108, 192, 112, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+  .error {
+    background: rgba(255, 102, 51, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+  }

@@ -1,0 +1,49 @@
+<%- include("../partials/header.ejs") %>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bodyText">
+                <form action="/connections/<%= connection.id %>?_method=PUT" method="post">
+                    <label for="topic">Topic:</label>
+                    <input id="topic" name="topic" type="text" value="<%= connection.topic %>" required>
+
+                    <br>
+
+                    <label for="title">Title:</label>
+                    <input id="title" name="name" type="text" value="<%= connection.name %>" required>
+
+                    <br>
+
+                    <label for="details">Details:</label>
+                    <textarea id="details" name="details" cols="50" rows="6" required><%= connection.details %></textarea>
+
+                    <br>
+
+                    <label for="when">When:</label>
+                    <input id="when" name="date" type="date" value="<%= connection.date %>" required>
+
+                    <br>
+
+                    <label for="start">Start:</label>
+                    <input id="start" name="start_Time" type="time" value="<%= connection.start_Time %>" required>
+
+                    <br>
+
+                    <label for="end">End:</label>
+                    <input id="end" name="end_Time" type="time" value="<%= connection.end_Time %>" required>
+
+                    <br><br>
+
+                    <label for="ImageURL">ImageURL:</label>
+                    <input id="ImageURL" name="imageURL" type="image" required>
+
+                    <br><br>
+                    <button id="createNewConnectionBtn">Edit Connection</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</main>
+    
+<%- include("../partials/footer.ejs") %>

@@ -1,0 +1,49 @@
+<%- include("../partials/header.ejs") %>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 bodyText">
+                <p><strong><%= connection.name%></strong></p>
+            </div>
+            
+            <% if(user) {  %>
+                <% if(user.id === connection.host_Name.id) {  %>
+                    <form>
+                        <div class="col-md-2 bodyButton"><button type="submit" formmethod="GET" formaction="/connections/<%= connection.id %>/edit?">Update</button></div>
+                        <div class="col-md-2 bodyButton"><button type="submit" formmethod="POST" formaction="/connections/<%= connection.id %>/?_method=DELETE">Delete</button></div>
+                    </form>
+                <% } %>
+            <% } %>
+
+        </div>
+
+        <div class="row">
+           <div class="col-md-8"><img class="connectionImg" src= "<%= connection.imageURL%>" width=250 alt=""></div><br>
+            <div class="col-md-8">
+                <p class="connectionHostName">
+                    Hosted By <%= connection.host_Name.firstName  + " " + connection.host_Name.lastName%> <br>
+                </p>
+                <p>
+                    <%= connection.date %><br>
+                    <%= connection.start_Time %> - <%= connection.end_Time %><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <p class="col-md-1"><strong>Details</strong></p>
+        </div>
+
+        <div class="row">
+            <p class="col-md-12">
+                <%= connection.details %>
+            </p>
+        </div>
+    </div>
+</main>
+    
+<%- include("../partials/footer.ejs") %>

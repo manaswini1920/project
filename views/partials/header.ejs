@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gaming Club Meetups</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/javascript/jquery-3.6.0.min.js"></script>
+        <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container-fluid">
+
+                <div class="row login">
+                    <div class="col-md-5 logo"><a href="/"><img src="/images/videoGameClubLogo.png" height="200" alt="Video Game Club Meetups logo, go to index.html"></a></div>
+                   
+                    <% if(!user) { %>
+                        <div class="col-md-1"><a href="/users/login">Login</a></div>
+                        <div class="col-md-1"><a href="/users/new">Sign Up</a></div>
+                    <% }else{ %>
+                        <div class="col-md-2">Hello <%= user.firstName %> <%= user.lastName %>!</div>
+                        <div class="col-md-3"><a href="/connections/new">Start a New Connection</a></div>
+                        <div class="col-md-1"><a href="/users/profile">Profile</a></div>
+                        <div class="col-md-1"><a href="/users/logout">Logout</a></div>
+                    <% } %>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 connections"><nav><a href="/connections">Connections</a></nav></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+        <% if(errorMessages.length > 0) {%>
+            <% errorMessages.forEach(message=>{%>
+                <div class='error'>
+                    <%=message%>
+                </div>
+                <%});%>
+                    <%}%>
+        
+                        <% if(successMessages.length > 0) {%>
+        
+                            <% successMessages.forEach(message=>{%>
+                                <div class='success'>
+                                    <%=message%>
+                                </div>
+                                <%});%>
+                                    <%}%>
