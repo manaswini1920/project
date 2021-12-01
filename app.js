@@ -8,24 +8,18 @@ const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const userRoutes = require("./routes/userRoutes.js");
 const User = require("./models/user");
-
-
-//Creates the application
+const mongoUrl= process.env.mongoUrl || 'mongodb://mongo/project'
 const app = express();
+//Creates the application
 
-//configure app
-let port = 5000;
-let host = "localhost";
-app.set("view engine", "ejs");
+
 
 //connect to database
-mongoose.connect('mongodb://localhost:27017/project', 
+mongoose.connect(mongoUrl, 
                 {useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=>{
+    console.log('mongo connected');
     //start the server
-    app.listen(port, host, function(){
-        console.log("Server is running on port " + port);
-    });
 })
 .catch(err=>console.log(err.message));
 
@@ -35,7 +29,7 @@ app.use(
         secret: "apoawoiepoadnfiapsda",
         resave: false,
         saveUninitialized: false,
-        store: new MongoStore({mongoUrl: 'mongodb://localhost:27017/project'}),
+        store: new MongoStore({mongoUrl}),
         cookie: {maxAge: 60*60*1000} 
     })
 );
@@ -105,3 +99,4 @@ app.use(function (err, request, response, next){
     })
     .catch(err => next(err));
 });
+module.exports=app
